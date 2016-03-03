@@ -1,0 +1,328 @@
+/* ***********Nautilus/FileChooser PathBar Linked Buttons*********** */
+
+.toolbar NautilusPathBar .button {
+    padding: 0px 4px;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button,
+NautilusToolbar.header-bar.titlebar NautilusPathBar .button.text-button {
+	background-color: transparent;
+    background-image:  url("assets/hilight-pathbar-dummy.svg");
+    border-width: 1px 1px 1px 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: linear-gradient(to top,
+                                  rgba(0,0,0,0.0) 19%,
+                                  rgba(255,255,255,0.9) 50%,
+                                  rgba(0,0,0,0.0) 81%
+                                  ) 0 1 0 0;
+    /*box-shadow: 1px 0 alpha(white, 0.03) inset;*/
+	box-shadow: none;
+	transition: 60ms ease-out;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar .button:backdrop {
+	background-color: transparent;
+	background-image:  url("assets/hilight-pathbar-dummy.svg");
+    border-width: 1px 2px 1px 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: none;
+    box-shadow: none;
+
+	transition: 60ms ease-out;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:only-child {
+	background-image: url("assets/hilight-pathbar.svg"),
+						-gtk-gradient (radial,
+										center 1.5, 0,
+										center 1.3, 0.7,
+										from(rgba(255,255,255,0.6)),
+										to(transparent)),
+						linear-gradient(to bottom,
+                                      rgba(0,0,0,0.0),
+                                      rgba(0,0,0,0.0)
+                                      );
+    background-color: transparent;	
+    border-width: 1px 2px 1px 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: none;
+	box-shadow: none;
+	transition: 60ms ease-out;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 78% 8px, auto, auto;
+}
+
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover {
+	background-color: transparent;
+	border-width: 1px 2px 1px 1px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: transparent;
+	border-image: none;
+	box-shadow: none;
+				
+	background-image: url("assets/hilight-pathbar-active.svg");
+	transition: 20ms ease-out;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 78% 8px;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:backdrop {
+	background-color: transparent;
+	border-width: 1px 2px 1px 1px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: none;
+	box-shadow: none;
+				
+	background-image: url("assets/hilight-pathbar-active.svg");
+	transition: 20ms ease-out;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 78% 8px;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover {
+	background-color: transparent;
+	background-image: url("assets/hilight-pathbar-active.svg"),
+						-gtk-gradient (radial,
+										center 1.5, 0,
+										center 1.3, 0.7,
+										from(rgba(255,255,255,0.6)),
+										to(transparent));
+
+    transition: 60ms ease-out;
+	border-image: none;
+	border-width: 1px 2px 1px 1px;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 78% 8px, auto;
+
+    box-shadow: none;
+}
+
+/* Middle toolbar-button */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:focus,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:focus {
+    border-right-width: 1px;
+    border-left-width:  0px;
+    border-radius: 0;
+     border-image: linear-gradient(to top,
+                                  rgba(0,0,0,0.0) 19%,
+                                  rgba(255,255,255,0.9) 50%,
+                                  rgba(0,0,0,0.0) 81%
+                                  ) 0 1 0 0;
+  
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Middle toolbar-button normal */
+ NautilusPathBar.linked .button:hover {
+}
+
+/* Middle toolbar-button active */
+ NautilusPathBar.linked .button:active,
+ NautilusPathBar.linked .button:active:hover {
+ border-width: 1px 2px 1px 0;
+}
+
+/* Middle toolbar-button insensitive */
+
+ NautilusPathBar.linked .button:insensitive {
+	background-image: none;
+	background-color: transparent;
+	
+}
+
+ NautilusPathBar.linked .button *:insensitive {
+	color: alpha(@theme_text_color, 0.3);
+}
+
+ NautilusPathBar.linked .button:insensitive:backdrop {
+}
+
+/* Leftmost toolbars-button */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:backdrop:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:backdrop:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:backdrop:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:backdrop:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:focus:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:first-child {
+	border-left-width: 1px;
+    border-right-width: 1px;
+     border-image: linear-gradient(to top,
+                                  rgba(0,0,0,0.0) 19%,
+                                  rgba(255,255,255,0.9) 50%,
+                                  rgba(0,0,0,0.0) 81%
+                                  ) 0 1 0 0;
+    border-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Leftmost toolbars-button normal */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:hover:first-child {
+	box-shadow: none;
+}
+
+/* Leftmost toolbars-button active */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:first-child {
+	border-width: 1px 2px 1px 1px;
+    box-shadow: none;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:first-child:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:first-child:backdrop {
+
+    box-shadow: none;
+}
+
+/* Leftmost toolbars-button insensitive */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:first-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:first-child:backdrop {
+	background-color: transparent;
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Rightmost toolbar-button */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:hover:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:backdrop:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:focus:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:last-child {
+    border-left-width: 0;
+    border-image:none;
+    
+    border-width: 1px 2px 1px 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Rightmost toolbar-button normal */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:hover:last-child {
+	box-shadow: none;
+}
+
+/* Rightmost toolbar-button active */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:last-child {
+
+	box-shadow: none;
+}
+
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:last-child:backdrop,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:last-child:backdrop {
+
+	box-shadow: none;
+}
+
+/* Rightmost toolbar-button insensitive */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:last-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:last-child:backdrop {
+	background-image: none;
+	background-color: transparent;
+    box-shadow: none;
+}
+
+
+/* ***************************************************************** */
+
+/* Linked single toolbar-button */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:backdrop:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:backdrop:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button.text-button:hover:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:backdrop:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:backdrop:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:backdrop:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:focus:hover:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:only-child {
+    padding-left:  10px;
+    padding-right: 10px;
+    border-width: 1px 2px 1px 1px;
+    border-radius: 3px;
+    border-image-width: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Linked single toolbar-button normal */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:hover:focus:only-child {
+    border-image-width: 0;
+}
+
+/* Linked single toolbar-button active */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:active:hover:only-child {
+    border-image-width: 0;
+
+}
+
+/* Linked single toolbar-button insensitive */
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:only-child,
+NautilusToolbar.header-bar.titlebar NautilusPathBar.linked .button:insensitive:only-child:backdrop {
+    border-image-width: 0;
+    background-image: none;
+}

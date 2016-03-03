@@ -1,0 +1,124 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 34px 1px 1px 1px;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+    -UnityDecoration-active-shadow-radius: 30px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 25px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: #00B4AB;
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+    border: 1px solid #141414;
+    border-bottom-width: 0;
+    border-radius: 7px 7px 0 0;
+    padding: 1px 6px 0 6px;
+
+    box-shadow: inset 0 1px alpha(white, 0.05),
+				inset 0 2px alpha(white, 0.02),
+				inset 0 3px alpha(white, 0.01),
+				inset 0 -1px alpha(black, 0.26);
+
+    background-clip: border-box;
+    color: @theme_fg_color;
+    background-color: transparent;
+	background-image: url("assets/subtle_carbon.png");
+    background-repeat: repeat;
+    background-position: bottom left;
+    text-shadow: -1px 0 alpha(black,0.22),  0 -1px alpha(black,0.22);
+}
+
+UnityDecoration.top:backdrop {
+    border: 1px solid #101010;
+    border-bottom-width: 0;
+    background-clip: border-box;
+    background-color: transparent;
+	background-image: url("assets/subtle_carbon.png");
+    background-repeat: repeat;
+    background-position: bottom left;
+    color: alpha(@theme_text_color, 0.5);
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-color: #141414;
+     background-image: none;
+
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop {
+    background-color: #101010;
+     background-image: none;
+}
+
+UnityDecoration.bottom {
+    background-color: #141414;
+     background-image: none;
+   border-radius: 0px 0px 2px 2px;
+}
+
+UnityDecoration.bottom:backdrop {
+    background-color: #101010;
+     background-image: none;
+   border-radius: 0px 0px 2px 2px;
+}
+
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+    background-color: #030303;
+	
+    border-top-color: #000000;
+    border-style: solid;
+    border-width: 1px 0 0px 0;
+
+    color: shade(@theme_fg_color,1.8);
+    text-shadow: -1px 0 alpha(black,0.22),  0 -1px alpha(black,0.22);
+}
+
+UnityPanelWidget:backdrop,
+.unity-panel:backdrop {
+    color: alpha(@theme_text_color, 0.5);
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+	color: @menu_fg_color;
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    icon-shadow: 0 -1px alpha(black, 0.36);
+	border-width: 0 0 1px 0;
+}
+
+.unity-panel.menubar:backdrop,
+.unity-panel .menubar *:backdrop {
+    color: shade(@menu_fg_color, 0.75);
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+border-image: none;
+    border-radius: 5px 5px 0 0;
+
+    border-width: 1px 1px 0 1px;
+	border-color: shade(@menu_bg_color, 0.85);
+	background-color: @menu_bg_color;
+    background-image: none;
+	box-shadow: none;
+}
