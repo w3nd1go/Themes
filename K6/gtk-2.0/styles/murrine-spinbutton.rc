@@ -1,0 +1,7 @@
+style "murrine-spinbutton"
+{
+	bg[NORMAL]      = shade (0.95, @bg_color) # need to fix rectangular border bug on spinbutton
+	bg[INSENSITIVE] = shade (0.99, @bg_color)
+}
+
+class "GtkSpinButton"  					style "murrine-spinbutton"

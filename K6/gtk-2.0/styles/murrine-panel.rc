@@ -1,0 +1,39 @@
+style "murrine-panel"
+{
+	bg[NORMAL] = @bg_color # shade (0.85, @bg_color) # should match bg[NORMAL] of "menubar"
+
+  bg_pixmap[NORMAL]	= "images/panel-bg.png"
+  bg_pixmap[PRELIGHT]	= "images/button-pressed.png"
+
+	engine "murrine" 
+	{
+		highlight_shade = 1.0
+	}
+
+}
+
+
+# RSC: Fix for CPU frequency applet
+ style "murrine-applet-text" = "murrine-panel"
+ {
+   fg[NORMAL] = @bg_color
+ }
+ widget_class "*CPUFreqApplet*" style:highest "murrine-applet-text"
+
+# Theme panel elements
+widget "*PanelWidget*" 					style "murrine-panel"
+widget "*PanelApplet*" 					style "murrine-panel"
+widget "*fast-user-switch*"				style "murrine-panel" # workaround for Fast User Switch applet
+class "PanelApp*" 					style "murrine-panel"
+class "PanelToplevel*" 					style "murrine-panel"
+widget_class "*Mail*" 					style "murrine-panel"
+widget_class "*notif*" 					style "murrine-panel"
+widget_class "*Notif*" 					style "murrine-panel"
+
+#XFCE panel
+widget_class "*notif*"		style "murrine-panel"
+widget_class "*Notif*"		style "murrine-panel"
+widget_class "*Tray*"		style "murrine-panel"
+widget_class "*tray*"		style "murrine-panel"
+widget "*Xfce*Panel*"		style "murrine-panel"
+class "*Xfce*Panel*"		style "murrine-panel"

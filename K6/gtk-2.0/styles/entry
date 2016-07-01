@@ -1,0 +1,65 @@
+#include"styles/entry"
+
+
+style "entry"{
+
+
+#  text[NORMAL] = "#CACACA"
+#  text[PRELIGHT] = "#E83F0B"
+#  text[ACTIVE] = "#FFFFFF"
+#  text[INSENSITIVE] = "#8C8C8C"
+
+# bg[NORMAL]        = "#8C8C8C"
+#base[NORMAL]       = "#8C8C8C"
+
+#GtkWidget::interior-focus = 0
+ #GtkWidget::focus-line-width = 0
+ #GtkEntry::inner-border = { 2, 2, 2, 2}
+
+
+
+   engine "pixmap"
+   {
+
+image
+    {
+      function		= SHADOW
+      detail		= "entry"
+      shadow		= IN
+      recolorable	= FALSE
+      file		= "images/frame1.png"
+      border		= { 3,3,3,3 }
+      stretch		= TRUE
+    }
+image 
+		{
+			function		= FLAT_BOX
+			recolorable     = TRUE
+			shadow			= NONE
+			state           = NORMAL
+	      	        detail          = "entry_bg"
+			file            = "/images/spinentry.png"
+			border			= {5,5,3,3 }
+			stretch 		= TRUE  
+     	}
+   	image 
+      	{
+			function        = FLAT_BOX
+			recolorable     = TRUE
+			shadow			= NONE
+			state           = INSENSITIVE
+	      	        detail          = "entry_bg"
+			file            = "/images/spinentry.png"
+			border			= {5,5,3,3 }
+			stretch 		= TRUE          
+		}
+}}
+class "GtkEntry"	style "entry"
+
+#class "GtkFrame"  				style "entry"
+
+class "GtkEditable"				style "entry"
+
+class "GtkPaned"       				style "entry"
+
+class "GTKComboEntry"				style "entry"

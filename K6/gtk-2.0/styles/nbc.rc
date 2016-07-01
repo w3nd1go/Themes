@@ -1,0 +1,276 @@
+style "nautilus-breadcrumbs"
+{
+	xthickness = 5
+	ythickness = 0
+  fg[NORMAL] = "#999999"
+  fg[PRELIGHT] = "#bbbbbb"
+  fg[SELECTED] = "#bbbbbb"
+  fg[ACTIVE] = "#aaaaaa"
+  fg[INSENSITIVE] = "#555555"
+
+
+  text[NORMAL] = "#999999"
+  text[PRELIGHT] = "#bbbbbb"
+  text[SELECTED] = "#bbbbbb"
+  text[ACTIVE] = "#aaaaaa"
+  text[INSENSITIVE] = "#555555"
+	
+	GtkButton::child-displacement-y		= 0
+	GtkButton::inner-border				= { 0, 8, 0, 0}
+
+	engine "pixmap"
+	{	
+     image
+      {
+	 	function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-up.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+		function		= ARROW
+		state			= PRELIGHT
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+     
+     image
+      {
+		function		= ARROW
+		state			= ACTIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+		function		= ARROW
+		state			= INSENSITIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+     	 	function		= ARROW
+      		state			= NORMAL
+      		recolorable		= TRUE
+      		overlay_file		= "images/arrow-down.png"
+      		overlay_border		= { 0, 0, 0, 0 }
+     		overlay_stretch		= FALSE
+     		arrow_direction		= DOWN
+      }
+   	 
+      image
+      {
+		function		= ARROW
+		state			= PRELIGHT
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+    
+     image
+     {
+		function		= ARROW
+		state			= ACTIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+
+     image
+     {
+		function		= ARROW
+		state			= INSENSITIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+
+     image
+     {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-left.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = PRELIGHT
+		overlay_file		= "images/arrow-left-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = ACTIVE
+		overlay_file		= "images/arrow-left-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = INSENSITIVE
+		overlay_file		= "images/arrow-left-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-right.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = PRELIGHT
+		overlay_file		= "images/arrow-right-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = ACTIVE
+		overlay_file		= "images/arrow-right-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = INSENSITIVE
+		overlay_file		= "images/arrow-right-insens.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+		image
+		{
+			function        	= BOX
+			shadow				= OUT
+			recolorable     	= TRUE
+			state				= PRELIGHT
+			file				= "images/prelight.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}		
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			shadow				= IN
+			state				= PRELIGHT
+			file				= "images/prelight.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}
+	  
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state				= NORMAL
+			file				= "images/normal.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state				= PRELIGHT
+			file				= "images/prelight.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}
+	
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state				= ACTIVE
+			file				= "images/active.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}  
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state				= INSENSITIVE
+			file				= "images/normal.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		} 
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state				= SELECTED
+			file				= "images/active.png"
+			border				= { 3, 13, 3, 3 }
+			stretch         	= TRUE
+		}
+	}
+}
+ 
+widget_class "*NautilusPathBar.*ToggleButton" style:highest "nautilus-breadcrumbs" 
+widget_class "*NautilusPathBar.*ToggleButton*Label*" style:highest
+ "nautilus-breadcrumbs" 
+widget_class "*NautilusPathBar.*Arrow*" style:highest "nautilus-breadcrumbs" 

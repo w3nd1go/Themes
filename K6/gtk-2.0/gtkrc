@@ -1,0 +1,849 @@
+# ----------------------------------------------------------------------
+
+# gtk-auto-mnemonics = 1
+gtk-menu-images = 0
+gtk-enable-mnemonics = 0
+
+# ----------------------------------------------------------------------
+style "bold-panel-menu"
+{
+	font_name = "Bold"
+
+	engine "murrine" {
+	roundness = 6
+	}
+}
+
+# ----------------------------------------------------------------------
+
+style "bold-panel-slab"
+{
+	font_name = "Bold"
+}
+widget "*Panel*slab-main-menu-panel-button*" style "bold-panel-slab"
+widget "*gimmie*" style "bold-panel-slab"
+widget "*Panel*MenuBar*" style "bold-panel-menu"
+
+# ----------------------------------------------------------------------
+
+style "small-text" {
+    font_name = "9"
+}
+
+
+gtk-toolbar-icon-size = small-toolbar
+
+gtk-icon-sizes = "panel-menu=16,16:panel=8,8:gtk-button=16,16:gtk-large-toolbar=24,24:gtk-small-toolbar=16,16"
+
+gtk-menu-popup-delay = 20 
+
+gtk-enable-animations = 1  
+
+gtk-tooltip-timeout = 970
+
+
+gtk_color_scheme = "fg_color:#7B7B7B\nbg_color:#111416\ntext_color:#7B7B7B\nbase_color:#111416\nselected_fg_color:#CCCCCC\nselected_bg_color:#525252\ntooltip_fg_color:#CCCCCC\ntooltip_bg_color:#111416\nlink_color:#7B7B7B\ntheme_color_01:#111416\ntheme_color_02:#ffffff\ntheme_color_03:#CACACA\ntheme_color_04:#D8D8D8\ntheme_color_05:#313131\ntheme_color_06:#0A0616\ntheme_color_07:#2B2630\ntheme_color_08:#4D3548\ntheme_color_09:#A7A097\ntheme_color_10:#182238\ntheme_color_11:#445878\ntheme_color_12:#C4D7ED\ntheme_color_13:#ABC8E2\ntheme_color_14:#375D81\ntheme_color_15:#183152\ntheme_color_16:#1E546E\ntheme_color_17:#2F3940\ntheme_color_18:#20448C\ntheme_color_19:#203359\ntheme_color_20:#1D2228\ntheme_color_21:#CACACA\ntheme_color_22:#232329\ntheme_color_23:#151518\ntheme_color_24:#F2F2F2\ntheme_color_25:#D9D9D9\ntheme_color_26:#A6A6A6\ntheme_color_27:#8C8C8C\ntheme_color_28:#595959\ntheme_color_29:#111416\ntheme_color_30:#292B2D\ntheme_color_31:#414345\ntheme_color_32:#585B5C\ntheme_color_33:#707273\ntheme_color_34:#888A8A\ntheme_color_35:#A0A1A2\ntheme_color_36:#B8B8B9\ntheme_color_37:#CFD0D0\ntheme_color_38:#E7E8E8\ntheme_color_39:#B0B2AF\ntheme_color_40:#E83F0B\ntheme_color_41:#666666\ntheme_color_42:#999999\ntheme_color_43:#D8D8D8\ntheme_color_44:#313131\ntheme_color_45:#0079C9\ntheme_color_46:#E4E4E4\ntheme_color_47:#C4C0C0\ntheme_color_48:#97A3A7\ntheme_color_49:#73A4B4\ntheme_color_50:#685C58\ntheme_color_51:#203359\ntheme_color_52:#B7B7B7"
+
+
+
+# ----------------------------------------------------------------------
+
+gtk-toolbar-icon-size = small-toolbar
+
+gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-button=16,16:gtk-large-toolbar=24,24"
+
+# ----------------------------------------------------------------------
+
+style "default"
+{
+
+
+
+  GtkWidget::interior_focus			= 7
+  GtkWidget::focus_padding			= 0
+  GtkButton::default_border			= { 0, 0, 0, 0 }
+  GtkButton::default_outside_border		= { 0, 0, 0, 0 }
+ 
+
+
+    GtkScrolledWindow ::scrollbars-within-bevel = 0 
+    GtkScrolledWindow ::scrollbar-spacing = 1
+
+  
+  GtkRange::slider_width			= 10
+  GtkRange::stepper_size			= 15
+  GtkRange::activate-slider                     = 1
+
+  GtkNotebook::tab-overlap = 0 
+  GtkNotebook::tab-curvature = 1 
+	
+  GimpColorNotebook::tab-border 	      = 1
+  GimpDockSeparator::height     	      = 10
+ 
+  GtkMenu	::double-arrows 	= 1
+
+  
+  GtkHScale ::focus-padding = 4
+  GtkVScale::slider_length 			= 15
+  GtkVScale::slider_width 			= 15
+  GtkHScale::slider_length 			= 15
+  GtkHScale::slider_width 			= 15
+  GtkArrow::arrow-scaling = 0.4 
+  
+ 
+
+  GtkPaned::handle_size				= 5
+  
+  GtkScrollbar::min_slider_length		= 50
+  GtkScrollbar::slider_width                    = 15
+  GtkScrollbar::stepper_size                    = 15
+  GtkScrollbar   ::activate-slider      = 1
+  	
+
+	GtkScrollbar   ::has-backward-stepper = 1
+	GtkScrollbar   ::has-forward-stepper  = 1
+	GtkScrollbar   ::has-secondary-backward-stepper = 0
+	GtkScrollbar   ::has-secondary-forward-stepper = 0
+    
+  GtkStatusbar   ::shadow_type	      = GTK_SHADOW_NONE
+
+  GtkCheckButton::indicator_size		= 12
+  GtkCheckButton::indicator_spacing		= 3
+ 
+  GimpColorNotebook::tab-border 	      = 1
+  GimpDockSeparator::height     	      = 10
+	
+  GtkMenuBar     ::shadow-type	      = GTK_SHADOW_NONE 
+  GtkMenuBar     ::internal-padding     = 1	
+
+  GtkMenu        ::horizontal-padding   = 3
+  GtkMenu        ::vertical-padding     = 1
+  GtkMenu        ::horizontal-offset    = -1
+  GtkMenu        ::double-arrows = 0
+ 
+  GtkToolbar     ::internal-padding     = 2
+  GtkToolbar     ::shadow-type	      = GTK_SHADOW_NONE 
+
+
+  GtkOptionMenu::indicator_size			= { 15, 8 }
+  GtkOptionMenu::indicator_spacing		= { 8, 2, 0, 0 }
+  GtkStatusbar::shadow_type			= GTK_SHADOW_NONE
+
+
+        GtkWidget      ::cursor-aspect-ratio = 0.05
+	WnckTasklist   ::fade-overlay-rect    = 1
+        WnckTasklist   ::fade-loop-time = 5.0
+	WnckTasklist   ::fade-opacity         = 0.5
+        NautilusIconContainer::highlight_alpha= 145
+
+GtkEntry::honors-transparent-bg-hint = 1
+
+  xthickness            	= 3
+  ythickness            	= 3
+
+
+
+
+	# Widget color definitions
+
+	fg[NORMAL]        = @fg_color		    # Metacity and mouseover, Most text
+	fg[PRELIGHT]      = @theme_color_02               # Text when mouseover
+	fg[ACTIVE]        = @fg_color               # Text when mouseclicking button, Tabs, Active window list
+	fg[SELECTED]      = @selected_fg_color      # Metacity X when window selected
+	fg[INSENSITIVE]   = shade (0.17, @fg_color) # Insensitive Text
+
+	bg[NORMAL]        = @theme_color_01              # Normal Background, inactive Metacity bar, buttons
+	bg[PRELIGHT]      = shade (1.15, @bg_color) # Mouseover buttons
+	bg[ACTIVE]        = shade (0.77, @bg_color) # Mouseclicking, Tabs, active window list
+	bg[SELECTED]	  = @selected_bg_color      # Metacity Bar
+	bg[INSENSITIVE]   = @bg_color               # Insensitive buttons
+
+	base[NORMAL]      = @base_color             # Background, most
+	base[PRELIGHT]    = shade (0.95, @bg_color) # Mouseover menu
+	base[ACTIVE]      = @theme_color_01 #@selected_bg_color      # Menu active item in inactive window
+	base[SELECTED]    = @theme_color_01 #@selected_bg_color      # Menu active item in active window
+
+	base[INSENSITIVE] = @bg_color               # Background, insensitive
+
+	text[NORMAL]      = @text_color             # Text in window
+	text[PRELIGHT]    = @theme_color_02            # Text on Mouseover
+	text[ACTIVE]      = @theme_color_02	    # Active text in inactive window
+	text[SELECTED]    = @selected_fg_color      # Active text in active window
+	text[INSENSITIVE] = shade (0.17, @fg_color) # Insensitive text
+
+# ----------------------------------------------------------------------
+
+
+
+engine "pixmap"
+  {
+
+image
+{
+	function=HANDLE
+        recolorable		= TRUE
+	overlay_file="images/handle-h.png"
+	overlay_stretch=FALSE
+	orientation=HORIZONTAL
+}
+image
+{
+	function=HANDLE
+        recolorable		= TRUE
+	overlay_file="images/handle-v.png"
+	overlay_stretch=FALSE
+	orientation=VERTICAL
+}
+	image
+	{
+		function	= SHADOW
+		shadow		= IN
+		recolorable	= TRUE
+		file		= "/images/frame1.png"
+		border		= {1,1,1,1}
+		stretch		= TRUE
+		}
+
+	image
+	{
+		function	= SHADOW
+		shadow		= OUT
+		recolorable	= TRUE
+		file		= "/images/frame1.png"
+		border		= {1,1,1,1}
+		stretch		= TRUE
+		}
+
+	image
+	{
+		function	= SHADOW
+		shadow		= ETCHED_IN
+		recolorable	= TRUE
+		file		= "/images/frame1.png"
+		border		= {1,1,1,1}
+		stretch		= TRUE
+		}
+
+	image
+	{
+		function	= SHADOW
+		shadow		= ETCHED_OUT
+		recolorable	= TRUE
+		file		= "/images/frame1.png"
+		border		= {1,1,1,1}
+		stretch		= TRUE
+		}
+
+	   image
+    	{
+       		function	= SHADOW_GAP
+       		recolorable	= TRUE
+       		file		= "images/frame1.png"
+       		border		= { 8, 8, 8, 8 }
+       		stretch		= TRUE
+       		gap_start_file	= "images/frame-gap-start.png"
+       		gap_start_border= { 8, 0, 8, 0 }
+       		gap_end_file	= "images/frame-gap-end.png"
+       		gap_end_border	= { 0, 8, 8, 0 }
+       		gap_side	= TOP
+    	}
+
+
+      # Arrows (all states)
+      image
+      {
+	 	function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-up.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+		function		= ARROW
+		state			= PRELIGHT
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+     
+     image
+      {
+		function		= ARROW
+		state			= ACTIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-active.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+		function		= ARROW
+		state			= INSENSITIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-up-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= UP
+      }
+      
+      image
+      {
+     	 	function		= ARROW
+      		state			= NORMAL
+      		recolorable		= TRUE
+      		overlay_file		= "images/arrow-down.png"
+      		overlay_border		= { 0, 0, 0, 0 }
+     		overlay_stretch		= FALSE
+     		arrow_direction		= DOWN
+      }
+   	 
+      image
+      {
+		function		= ARROW
+		state			= PRELIGHT
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+    
+     image
+     {
+		function		= ARROW
+		state			= ACTIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-active.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+
+     image
+     {
+		function		= ARROW
+		state			= INSENSITIVE
+		recolorable		= TRUE
+		overlay_file		= "images/arrow-down-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= DOWN
+     }
+
+     image
+     {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-left.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = PRELIGHT
+		overlay_file		= "images/arrow-left-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = ACTIVE
+		overlay_file		= "images/arrow-left-active.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = INSENSITIVE
+		overlay_file		= "images/arrow-left-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= LEFT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = NORMAL
+		overlay_file		= "images/arrow-right.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = PRELIGHT
+		overlay_file		= "images/arrow-right-prelight.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = ACTIVE
+		overlay_file		= "images/arrow-right-active.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+      
+      image
+      {
+		function		= ARROW
+		recolorable		= TRUE
+		state                   = INSENSITIVE
+		overlay_file		= "images/arrow-right-insensitive.png"
+		overlay_border		= { 0, 0, 0, 0 }
+		overlay_stretch		= FALSE
+		arrow_direction		= RIGHT
+      }
+image
+{
+	function=VLINE
+	file="images/line-v.png"
+	border={1,1,0,0}
+	stretch=TRUE
+}
+image
+{
+	function=HLINE
+	file="images/line-h.png"
+	border={0,0,1,1}
+	stretch=TRUE
+}	
+image
+    {
+      function		= SHADOW
+      detail		= "entry"
+      shadow		= IN
+      recolorable	= FALSE
+      file		= "images/text-entry.png"
+      border		= { 3,3,3,3 }
+      stretch		= TRUE
+    }
+	
+image
+{
+
+	function	=FOCUS
+	file		="images/null.png"
+	border		={0,0,0,0}
+	stretch		=TRUE
+}
+
+# Set the insensitive state for all shadows
+        image
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            state 			= INSENSITIVE
+            shadow         		= OUT
+	    overlay_file		="images/insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+
+	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    state 			= INSENSITIVE
+            shadow          		= IN
+	    overlay_file		="images/insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    state 			= INSENSITIVE
+            shadow          		= ETCHED_IN
+	    overlay_file		="images/insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+#Set the prelight fro all shadows
+	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            state 			= PRELIGHT
+            shadow          		= OUT
+	    overlay_file		="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    state 			= PRELIGHT
+            shadow          		= IN
+ 	    overlay_file		="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+  	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    state 			= PRELIGHT
+            shadow          		= ETCHED_IN
+  	    overlay_file		="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+# Theme everything else the same (NORMAL, SELECTED, ACTIVE)
+  	image
+	{
+            function        		= OPTION
+            recolorable    		= TRUE
+            shadow          		= OUT
+            overlay_file    		="images/check1.png"
+            overlay_stretch 	        = FALSE
+        }
+ 	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            shadow          		= IN
+	    overlay_file		="images/check3.png" #got you you little ****
+            overlay_stretch 		= FALSE
+        }
+	image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            shadow          		= ETCHED_IN
+	    overlay_file		="images/check3.png" #changed from 2
+            overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+	# CHECKs themeing for widgets that are not pure checkbuttons (e.g. in lists):
+# Set the insensitive state for all shadows
+ 	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= INSENSITIVE
+            shadow          		= OUT
+ 	    overlay_file		="images/insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+ 	 image 
+        {
+            function       	 	= CHECK
+	    recolorable     		= TRUE
+	    state 			= INSENSITIVE
+	    shadow          		= IN
+	    overlay_file		="images/insensitive.png"
+	    overlay_stretch 		= FALSE
+        }
+        image 
+        {
+            function       	 	= CHECK
+	    recolorable     		= TRUE
+	    state 			= INSENSITIVE
+	    shadow          		= ETCHED_IN
+	    overlay_file		="images/insensitive.png"
+	    overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+#Set the prelight for all shadows
+	 image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= PRELIGHT
+            shadow          		= OUT
+	    overlay_file                ="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+  	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    state 			= PRELIGHT
+            shadow          		= IN
+	    overlay_file		="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+  	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    state 			= PRELIGHT
+            shadow          		= ETCHED_IN
+	    overlay_file		="images/check2.png"
+            overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+# Set the rest
+	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+            shadow          		= OUT
+	    overlay_file                ="images/check1.png"
+            overlay_stretch 		= FALSE
+        }
+
+	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+            shadow          		= IN
+	    overlay_file		="images/check3.png"
+            overlay_stretch 		= FALSE
+        }
+
+ 	image 
+	{
+            function        		= CHECK
+            recolorable     		= TRUE
+            shadow          		= ETCHED_IN
+	    overlay_file		="images/check3.png"  #this is possibly 2
+            overlay_stretch 		= FALSE
+        }
+image
+{
+	function=FLAT_BOX
+	stretch=TRUE
+	file="images/focus.png"
+	border={2,2,2,2}
+}
+
+}
+
+}
+style "nautilus-location" 
+{
+bg[NORMAL] = @bg_color
+}
+
+widget "*.nautilus-extra-view-widget" style : highest "nautilus-location"
+class "GtkWidget"	style "default"
+
+
+style "layout"    = "default"
+{
+  engine "pixmap"
+  {
+   
+    image
+    {
+      function          =  FLAT_BOX
+      detail            = "button"
+      state             = NORMAL
+      file              = "images/a1.png"
+      recolorable       = TRUE
+      border            = { 8, 8, 8, 8 }
+      stretch           = FALSE
+    }
+  }
+}
+
+class "GtkLayout"          style "layout"
+
+style "unstyle"
+{
+  engine ""
+  {
+  }
+}
+# Workaround style for places where the text color is used instead of the fg color.
+style "text_is_fg_color_workaround" {
+
+	text[NORMAL]      = "#a1a1a1"#@fg_color
+	text[PRELIGHT]    = "#a1a1a1"#@fg_color
+	text[SELECTED]    = "#0a0a0a"#@selected_fg_color
+	text[ACTIVE]      = "#a1a1a1"#@fg_color
+	text[INSENSITIVE] = "#0a0a0a"#darker (@bg_color)
+}
+
+# Workaround style for menus where the text color is used instead of the fg color.
+style "menuitem_text_is_fg_color_workaround" {
+
+text[NORMAL]      = "#a1a1a1"#@fg_color
+	text[PRELIGHT]    = "#a1a1a1"#@fg_color
+	text[SELECTED]    = "#0a0a0a"#@selected_fg_color
+	text[ACTIVE]      = "#a1a1a1"#@fg_color
+	text[INSENSITIVE] = "#0a0a0a"#darker (@bg_color)
+}
+
+# Workaround style for places where the fg color is used instead of the text color.
+style "fg_is_text_color_workaround" {
+
+		fg[PRELIGHT]    = "#a1a1a1"#@fg_color
+	fg[SELECTED]    = "#0a0a0a"#@selected_fg_color
+	fg[SELECTED]      = "#0a0a0a"#@selected_fg_color
+	fg[ACTIVE]        = "#0a0a0a"#@selected_fg_color
+	fg[INSENSITIVE]   = "#31353A"#darker (@bg_color)
+}
+
+# Style to set the toolbar to use a flat style. This is because the "New" button in
+# Evolution is not drawn transparent. So if there is a gradient in the background it will
+# look really wrong.
+# See http://bugzilla.gnome.org/show_bug.cgi?id=446953.
+style "evo_new_button_workaround" {
+
+	engine "clearlooks" {
+		toolbarstyle = 0
+	}
+}
+
+###################################################
+# Bug Fixes for applications
+###################################################
+
+############# PIDGIN #############
+
+# The pidgin availability button needs a light foreground
+
+style "pidginfix" = "button" {
+	text[NORMAL] = "#7B7B7B"
+	text[PRELIGHT] = "#E8E8E8"
+}
+
+widget_class "*PidginStatusBox.GtkToggleButton*" style "pidginfix"
+
+############# NAUTILUS & YELP #############
+
+# Yelp & Nautilus appear to hardcode unwanted margins onto the GtkEntries on their toolbars
+
+style "entryfix" {
+	xthickness = 0
+	ythickness = 0
+}
+
+#widget "*.NautilusLocationBar*Entry" style "entryfix"
+#widget "*.NautilusSearchBar*Entry" style "entryfix"
+widget "YelpWindow.GtkVBox.tools.Search.GtkHBox.GtkEntry" style "entryfix"
+
+# Nautilus icon view rename bug workaround - thanks, benzea :)
+
+style "nautilusrename" {
+	fg[NORMAL] = "#7B7B7B"
+}
+
+widget_class "*.EelEditableLabel" style "nautilusrename"
+
+# Nautilus search/trash extra-view area:
+# use the tooltips treatment like Gedit does for a similarly-placed area
+
+#widget "*.nautilus-extra-view-widget" style : highest "Tooltips"
+
+############ GEDIT ##############
+
+style "geditfix" {
+	base[NORMAL] = "#111416"
+}
+widget "GeditSearchDialog.GtkVBox.search_dialog_content.table.GeditHistoryEntry.GtkEntry" style "geditfix"
+
+############# FSPOT #############
+
+# F-Spot's comments label in Edit Image view
+
+style "fspotfix" {
+	fg[NORMAL] = "#7B7B7B"
+}
+# Ahem:
+widget "main_window.vbox41.group_vbox.main_hpaned.view_vbox.view_notebook.photo_box.ImageContainer.GtkVBox.GtkEventBox.GtkFrame.GtkVBox.GtkHBox.GtkLabel" style "fspotfix"
+
+
+include"styles/tooltips"
+
+include"styles/button-styles"
+
+include"styles/entry"
+
+include"styles/optionmenu"
+
+include"styles/handlebox"
+
+include"styles/menu-menubar"
+
+include"styles/panelbar.rc"
+
+include"styles/tab1"
+
+include "styles/CompizConfig Settings Manager.rc"
+
+include"styles/list.rc"
+
+include"styles/murrine-spinbutton.rc"
+
+include"scrollbars/scrollbar.rc"
+
+include"styles/statusbar"
+
+include"styles/murrine-progressbar.rc"
+
+include"styles/range"
+
+include"styles/toolbar-styles"
+
+include "styles/murrine-style-images-and-labels"
+
+include "styles/inactivetext"
+
+#include"Icons/iconrc"
+
+include"styles/framerc"
+
+

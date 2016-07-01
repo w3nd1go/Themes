@@ -1,0 +1,24 @@
+style "frame"
+{
+	#Uncomment for dark statusbars. Breaks some apps. (FIXME: Doesn't work)
+	#bg[ACTIVE] = shade(0.2,@bg_color)
+	#fg[NORMAL] = mix (1.5, @fg_color, '#ffffff')
+	#fg[PRELIGHT] = mix (1.4, @fg_color, '#ffffff')
+bg_pixmap[NORMAL]="images/a1.png"
+
+	engine "pixmap"{}
+		
+	
+}
+
+style "frame-title" = "frame"
+{
+	fg[NORMAL] = lighter (@fg_color)
+}
+
+style "nautilus-location"
+{
+	bg[NORMAL] = @bg_color
+}
+
+class "GtkFrame"     style "frame"

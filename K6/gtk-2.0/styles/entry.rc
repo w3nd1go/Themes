@@ -1,0 +1,42 @@
+#===================================================================
+
+style "entry"{
+
+#GtkWidget::interior-focus = 0
+ #GtkWidget::focus-line-width = 0
+ #GtkEntry::inner-border = { 2, 2, 2, 2}
+
+
+
+   engine "pixmap"
+   {
+
+image
+    {
+      function		= SHADOW
+      detail		= "entry"
+      shadow		= IN
+      recolorable	= FALSE
+      file		= "images/frame1.png"
+      border		= { 3,3,3,3 }
+      stretch		= TRUE
+    }
+}}
+
+
+class "GtkEntry"	style "entry"
+
+class "GtkEditable"				style "entry"
+
+class "GtkPaned"       				style "entry"
+
+class "GTKComboEntry"				style "entry"
+
+widget_class "*<GtkComboBox>*"			style "entry"
+widget_class "*<GtkCombo>*"         		style "entry"
+
+class "GtkSpinbutton"				style "entry"
+
+#class "GtkOptionMenu"      			style "entry"
+
+#===================================================================

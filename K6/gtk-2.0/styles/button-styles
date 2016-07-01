@@ -1,0 +1,70 @@
+style "button" 
+{
+      
+  text[NORMAL] = "#7b7b7b"
+  text[PRELIGHT] = "#FFFFFF"
+  text[ACTIVE] = "#FFFFFF"
+  text[INSENSITIVE] = "#31353A"
+  fg[ACTIVE] = "#e8e8e8"
+  fg[SELECTED] = "#e8e8e8"
+
+
+	xthickness = 2
+	ythickness = 2
+
+
+engine "pixmap"
+{
+
+
+	image
+{
+	function=BOX
+	detail="buttondefault"
+	file="images/button-normal.png"
+	border={6,6,3,3}
+	stretch=TRUE
+}
+image
+{
+	function=BOX
+	state=PRELIGHT
+	file="images/button-prelight.png"
+	border={6,6,3,3}
+	stretch=TRUE
+	overlay_file ="images/buttonfocus.png"
+        overlay_stretch                 = TRUE
+	overlay_border={6,6,3,3}
+	stretch=TRUE
+}
+image
+{
+	function=BOX
+	state=ACTIVE
+	file="images/button-pressed.png"
+	border={6,6,3,3}
+	stretch=TRUE
+}	
+image
+{
+	function=BOX
+	state=INSENSITIVE
+	file="images/button-insensitive.png"
+	border={6,6,3,3}
+	stretch=TRUE
+}
+image
+{
+	function=BOX
+	file="images/button-normal.png"		
+	border={6,6,3,3}
+	stretch=TRUE
+}}}
+
+#class  "*.<GtkButton>.*"	style   "button"
+
+class "GtkButton"	style   "button"
+
+
+
+#widget_class "*GtkToggleToolButton*"      		style  "button"

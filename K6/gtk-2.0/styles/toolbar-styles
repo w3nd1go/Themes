@@ -1,0 +1,17 @@
+style "toolbar" = "default"
+{
+	
+	engine "pixmap"{
+
+		image {
+	  		function = BOX
+	  		file = "images/toolbar.png"
+	  		border = {1,1,1,1}
+	  	}
+	  	
+	}
+}
+
+class "GtkToolbar" style "toolbar"
+widget_class "*HandleBox"		style "toolbar"
+class "*HandleBox"			style "toolbar"

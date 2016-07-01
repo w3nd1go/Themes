@@ -1,0 +1,5 @@
+style "ccsm-button"
+{
+  bg[SELECTED] = "#7b7b7b"
+}
+widget_class "*.<GtkButton>*" style "ccsm-button"

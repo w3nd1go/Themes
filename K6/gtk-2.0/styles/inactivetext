@@ -1,0 +1,16 @@
+style "inactivetext"
+{
+
+engine "mist"
+ 	{
+	}
+}
+
+widget_class "*.<GtkLabel>" style "inactivetext"
+widget_class "*.<GtkCellLayout>" style "inactivetext"
+widget_class "*.<GtkMenuItem>.*" style "inactivetext"
+widget_class	"*<GtkToolbar>*<GtkButton>*<GtkLabel>*" style:highest "inactivetext"
+widget_class	"*<GtkToolbar>*<GtkLabel>*" style:highest "inactivetext"
+widget_class	"*<GtkMenuBar>*<GtkLabel>*" style:highest "inactivetext"
+widget_class "*Panel*Label*" style:highest "inactivetext"
+widget_class "*CPUFreqApplet*" style:highest "inactivetext"

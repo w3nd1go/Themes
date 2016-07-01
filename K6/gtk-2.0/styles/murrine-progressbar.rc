@@ -1,0 +1,72 @@
+style "progressbar"
+{       
+ 
+
+       
+	xthickness = 2
+        ythickness = 2 
+
+          bg[SELECTED] = "#B7B7B7"
+    
+        
+  GtkProgressBar::min-horizontal-bar-height	= 10
+  GtkProgressBar::min-vertical-bar-width	= 10
+  GtkProgressBar::xspacing 	                = 2
+  GtkProgressBar::yspacing 	                = 2
+  
+
+
+ 
+  engine "murrine" 
+  {
+                animation               = TRUE
+                #contrast		= 2.5
+		#gradient_shades		= { 1.11, 1.07, 1.065, 0.92 }
+		#highlight_shade		= 1.20
+		border_shades = { 2.0, 1.2 } #to draw a gradient on the border.
+
+     border_colors = { "#151515", "#2c2c2c" } #to set the colors used on the border of many widgets. border_colors = FALSE to disable.
+
+		
+                lightborderstyle    	= 1
+
+                reliefstyle	    = 4     # 0 = flat, 1 = inset, 2 = shadow
+
+                roundness           =3     # 0 = squared, 1 = old default, more will increase roundness
+		progressbarstyle = 1
+               
+                trough_shades = { 0.8, 1.2 } #to draw a gradient on the trough of GtkScrollbar and GtkProgressBar.
+
+
+}
+
+}
+
+widget_class "*ProgressBar*" 			style "progressbar"
+class "GtkProgressBar"				style "progressbar"
+#widget_class "*MenuItem.*ProgressBar*" 	style "progressbar"
+class "GtkBar" style "progressbar"
+# ----------------------------------------------------------------------
+
+ # mozilla-GtkProgressBar style
+
+ style "mozilla-GtkProgressBar" {
+	GtkProgressBar::min-horizontal-bar-height = 12
+	GtkProgressBar::min-vertical-bar-width = 12
+	GtkProgressBar::xspacing = 0
+	GtkProgressBar::yspacing = 0
+
+ 	bg[SELECTED] = "#B7B7B7"
+
+ engine "murrine"{             
+	contrast = 0.8
+        roundness           =3
+	progressbarstyle = 1
+	reliefstyle = 4
+ }
+}
+
+ widget "MozillaGtkWidget*GtkProgressBar*" style "mozilla-GtkProgressBar"
+
+# ----------------------------------------------------------------------
+

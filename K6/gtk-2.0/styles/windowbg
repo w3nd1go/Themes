@@ -1,0 +1,6 @@
+style "gradient" = "default"
+{
+    bg_pixmap[NORMAL] = "images/a1.png"
+}
+
+class "GtkWindow" 	style "gradient"
